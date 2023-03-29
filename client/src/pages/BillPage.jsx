@@ -195,23 +195,7 @@ const BillPage = () => {
         <h1 className="text-4xl text-center">Bills</h1>
       {bills ? (<div className="px-6">
         <Table dataSource={bills} columns={columns} bordered scroll={{x:1000,y:300}} rowKey="_id"/>
-        <div className="cart-totals flex justify-end">
-          <Card className="w-72">
-            <div className="cart-totals mt-auto">
-              
-              <div className="py-4 px-2">
-                <Button
-                  type="primary"
-                  size="large"
-                  className="w-full"
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Print
-                </Button>
-              </div>
-            </div>
-          </Card>
-        </div>
+        
       </div>):<Spin
         size="large"
         className="absolute top-1/2 h-screen w-screen flex justify-center"

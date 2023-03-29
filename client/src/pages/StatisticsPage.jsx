@@ -83,7 +83,7 @@ const StatisticPage = () => {
     <>
       <Header />
       <h1 className="text-4xl text-center">Statistics</h1>
-      {data.length>0 ? (
+      {data?.length>0 ? (
         <div className="px-6">
         <div className="statistic-section">
           <h2>

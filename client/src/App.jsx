@@ -8,7 +8,7 @@ import CartPage from "./pages/CartPage";
 import CustomerPage from "./pages/CustomersPage.jsx"
 import HomePage from "./pages/Home.jsx";
 import ProductPage from "./pages/ProductPage.jsx";
-import StatisticsPage from "./pages/StatisticsPage.jsx"
+import StatisticPage from "./pages/StatisticsPage.jsx"
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -53,10 +53,10 @@ function App() {
           }
         />
         <Route
-          path="/statistic"
+          path="/statistics"
           element={
             <RouteControl>
-              <StatisticsPage />
+              <StatisticPage />
             </RouteControl>
           }
         />
