@@ -16,7 +16,6 @@ const Login = () => {
   const [loading,setLoading] =useState(false)
   const navigate = useNavigate()
   const onFinish = async (values) => {
-    console.log(values);
     setLoading(true)
     try {
       const res = await fetch(process.env.REACT_APP_SERVER_URL + "/api/users/login",{
@@ -28,10 +27,10 @@ const Login = () => {
       }
       )
       const user = await res.json()
-      
+      console.log(res.ok);
       if (res.ok) {
-        message.success("Login process was successful")
         navigate("/")
+        message.success("Login process was successful")
         setLoading(false)
         localStorage.setItem("posAppUser",JSON.stringify(user))
       }else if(res.status === 401){
@@ -53,7 +52,7 @@ const Login = () => {
 
 
   const onChange = (currentSlide) => {
-    console.log(currentSlide);
+    
   };
   return (
     <div className="h-screen">
