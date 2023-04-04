@@ -30,9 +30,7 @@ $ npm install
 
 $ npm start
 
-Technologien
-
-Im Laufe des Webentwicklung-Jahreskurses haben wir den MERN-Stack gelernt, und alle von diesen Technologien finden in dem Projekt Anwendung. Zusätzlich verwenden wir diverse Technologien, welche wir uns selber beigebracht und umgesetzt haben.
+# Technologien
 
 Im Frontend benutze ich  JavaScript ,React ,Redux-Toolkit, Redux , Ant-design Tailwindcss
 
