@@ -11,8 +11,11 @@ Um posApplitaion zu clonen und zu starten, sollten Git und Node.js auf dem Rechn
 .env Datei 
 
 PORT =
+
 URL = mongodb+srv://...
+
 SENDGRID_API_KEY=
+
 JWT=
 
 $ npm start
